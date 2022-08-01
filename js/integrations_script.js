@@ -53,7 +53,7 @@ function showData(data,header){
         }
         html +=`<td><div id="data_div${i}"><img src='${data[i].image}'/>
         <h1><strong>${data[i].title}</h1></strong>
-        <p>${data[i].description}</p><a href="https://zoom.us/" id="data_a${i}" class="a_seed">See Details</a></div>
+        <p>${data[i].description}</p><a href="${data[i].link}" id="data_a${i}" class="a_seed">See Details</a></div>
         </td>`;
         if(i%2==1)
         {
