@@ -10,40 +10,53 @@
     <title>Calendly</title>
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "icon" href =  "https://assets.calendly.com/assets/favicon-6c298004c5e8a7eb846b3a356bc6d036c1a880e5d22163f4f52a7e3d6bb12109.ico" 
-    type = "image/x-icon">
+    <link rel="icon" href="https://assets.calendly.com/assets/favicon-6c298004c5e8a7eb846b3a356bc6d036c1a880e5d22163f4f52a7e3d6bb12109.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/sign_header1.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
- <!-- header start -->
- <div class="header-div">
-    <img style="padding-left: 160px; height: 30px; width: 50px; padding-top: 10px; padding-right: 210px"
-      src="assets/logo.png"
-      alt=""
-    />
-    <div class="header-btn">
-      <button id="head-btn1"><a href="./user.html">Home</a></button>
-      <button id="head-btn1"><a href="#">Availability</a></button>
-      <button id="head-btn1"><a href="#">Integration</a></button>
-      <button id="head-btn1"><a href="#">Help</a></button>
-      <div class="dropdown">
-        <button id="head-btn1" class="dropbtn">Account</button>
-        <div class="dropdown-content">
-          <a href="acc_setting.html">Account Setting</a>
-          <a href="#"> Billing</a>
-          <a href="#">Calendar Connection</a>
-          <a href="#">Users</a>
-          <a href="#">Privacy And Security Setting</a>
-          <a href="#">Share your link</a>
-          <a href="#">Apps</a>
-          <hr class="clear" />
-          <a href="index.html" onclick="logout()">Logout</a>
-        </div>
-      </div>
+    <!-- header start -->
+    <div class="header-div">
+        <img style="padding-left: 160px; height: 30px; width: 50px; padding-top: 10px; padding-right: 210px" src="assets/logo.png" alt="" />
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+
+        <!-- <div class="header-btn">
+            <button id="head-btn1"><a href="./user.html">Home</a></button>
+            <button id="head-btn1"><a href="#">Availability</a></button>
+            <button id="head-btn1"><a href="#">Integration</a></button>
+            <button id="head-btn1"><a href="#">Help</a></button>
+            <div class="dropdown">
+                <button id="head-btn1" class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                    <a href="acc_setting.html">Account Setting</a>
+                    <a href="#"> Billing</a>
+                    <a href="#">Calendar Connection</a>
+                    <a href="#">Users</a>
+                    <a href="#">Privacy And Security Setting</a>
+                    <a href="#">Share your link</a>
+                    <a href="#">Apps</a>
+                    <hr class="clear" />
+                    <a href="index.html" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </div> -->
     </div>
-  </div>
-  <!-- Header ends -->
+    <!-- Header ends -->
     <main>
         <div id="top_cont">
             <p>My Calendly</p>
@@ -59,32 +72,32 @@
             <input type="text" id="search" placeholder="Search">
             <button id="serch_btn">Search</button>
         </div>
-            
-        
-            <div id="showdata">
+
+
+        <div id="showdata">
         </div>
-        
+
     </main>
-   
 
 
-<script type="text/javascript" src="./js/user.js"></script>
-<!-- Start of ChatBot (www.chatbot.com) code -->
-<script type="text/javascript">
-  window.__be = window.__be || {};
-  window.__be.id = "604afaec012e2e000777fe25";
-  (function () {
-    var be = document.createElement("script");
-    be.type = "text/javascript";
-    be.async = true;
-    be.src =
-      ("https:" == document.location.protocol ? "https://" : "http://") +
-      "cdn.chatbot.com/widget/plugin.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(be, s);
-  })();
-</script>
-<!-- End of ChatBot code -->
+
+    <script type="text/javascript" src="./js/user.js"></script>
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "604afaec012e2e000777fe25";
+        (function() {
+            var be = document.createElement("script");
+            be.type = "text/javascript";
+            be.async = true;
+            be.src =
+                ("https:" == document.location.protocol ? "https://" : "http://") +
+                "cdn.chatbot.com/widget/plugin.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    <!-- End of ChatBot code -->
 </body>
 
 </html>
